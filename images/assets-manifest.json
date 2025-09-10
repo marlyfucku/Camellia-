@@ -1,0 +1,24 @@
+{
+  "note": "These are placeholder images. Replace with real assets exported from your Figma file.",
+  "expected_files": [
+    "logo.svg",
+    "hero.jpg or hero.svg",
+    "product-01.(jpg/png/svg)",
+    "product-02.(jpg/png/svg)",
+    "product-03.(jpg/png/svg)",
+    "product-04.(jpg/png/svg)",
+    "product-05.(jpg/png/svg)",
+    "product-06.(jpg/png/svg)",
+    "product-07.(jpg/png/svg)",
+    "product-08.(jpg/png/svg)",
+    "product-09.(jpg/png/svg)",
+    "product-10.(jpg/png/svg)",
+    "product-11.(jpg/png/svg)",
+    "product-12.(jpg/png/svg)"
+  ],
+  "how_to_replace": [
+    "Export images from Figma (PNG/JPG/SVG)",
+    "Drop them into /images with the same filenames to see them on the pages",
+    "Update HTML if you change filenames"
+  ]
+}

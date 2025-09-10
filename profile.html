@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Cloth Store — Profile</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Cloth<span>Store</span></a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="catalog.html" class="nav__link">Shop</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+    <div class="header__icons">
+      <a href="login.html" class="link">Login</a>
+      <a href="cart.html" class="link">Cart (0)</a>
+    </div>
+  </div>
+</header>
+
+<main class="container page profile">
+  <h1 class="page__title">My Profile</h1>
+  <div class="grid-2">
+    <section class="card">
+      <h3>Account details</h3>
+      <div class="field"><label>Name</label><input type="text" value="John Doe"></div>
+      <div class="field"><label>Email</label><input type="email" value="john@example.com"></div>
+      <button class="btn" type="button">Save</button>
+    </section>
+    <section class="card">
+      <h3>Addresses</h3>
+      <p class="muted">No saved addresses yet.</p>
+      <button class="btn" type="button">Add Address</button>
+    </section>
+  </div>
+  <section class="card">
+    <h3>Orders</h3>
+    <div class="orders">
+      <div class="order">
+        <div>#10023</div><div>2 items</div><div>$79.98</div><div>Delivered</div>
+      </div>
+      <div class="order">
+        <div>#10022</div><div>1 item</div><div>$49.99</div><div>Shipped</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© 2025 Cloth Store. All rights reserved.</p>
+    <div class="footer__links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
