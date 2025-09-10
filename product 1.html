@@ -35,6 +35,24 @@
       <img src="images/product-02.svg" alt="Thumb 2">
       <img src="images/product-03.svg" alt="Thumb 3">
     </div>
+
+    <script>
+  const mainImg = document.querySelector(".product__main");
+  const thumbs = document.querySelectorAll(".thumbs img");
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      
+      let mainSrc = mainImg.src;
+      let thumbSrc = thumb.src;
+
+      
+      mainImg.src = thumbSrc;
+      thumb.src = mainSrc;
+    });
+  });
+</script>
+
   </div>
   <div class="product__info">
     <h1>Summer T‑Shirt</h1>
@@ -55,8 +73,9 @@
       </div>
     </div>
     <div class="actions">
-      <a href="cart.html" class="btn">Добавить в корзину</a>
-    </div>
+  <a href="cart.html" class="btn btn-add">Добавить в корзину</a>
+</div>
+
   </div>
 </main>
 

@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="css/style.css" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <title>Camellia Store — Cart</title>
+<title>Camellia Store — Cart</title>
 </head>
 <body>
 
@@ -33,37 +31,20 @@
     <thead>
       <tr><th>Product</th><th>Price</th><th>Qty</th><th>Total</th></tr>
     </thead>
-    <tbody>
-      <tr>
-        <td class="cart__product">
-          <img src="images/product-01.svg" alt="Product 1">
-          <div>
-            <div class="name">Summer T‑Shirt</div>
-            <div class="muted">Size M</div>
-          </div>
-        </td>
-        <td>$29.99</td>
-        <td>1</td>
-        <td>$29.99</td>
-      </tr>
-      <tr>
-        <td class="cart__product">
-          <img src="images/product-02.svg" alt="Product 2">
-          <div>
-            <div class="name">Casual Jeans</div>
-            <div class="muted">Size 32</div>
-          </div>
-        </td>
-        <td>$49.99</td>
-        <td>1</td>
-        <td>$49.99</td>
-      </tr>
+    <tbody id="cart-items">
+      <!-- Товары будут подставляться через JS -->
     </tbody>
   </table>
   <div class="cart__summary">
-    <div class="line"><span>Subtotal</span><span>$79.98</span></div>
+    <div class="line"><span>Subtotal</span><span>$0.00</span></div>
     <div class="line"><span>Shipping</span><span>$0.00</span></div>
-    <div class="line total"><span>Total</span><span>$79.98</span></div>
+    <div class="line total"><span>Total</span><span>$0.00</span></div>
+
+    <div class="cart__controls">
+  <button id="clear-cart" class="btn btn--block">Очистить корзину</button>
+</div>
+
+    
     <a href="checkout.html" class="btn btn--block">Proceed to Checkout</a>
   </div>
 </main>
@@ -78,6 +59,6 @@
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="./js/cart.js"></script>
 </body>
 </html>

@@ -36,9 +36,39 @@ img{display:block;max-width:100%}
 .hero__inner{display:flex;align-items:center;justify-content:space-between;gap:40px}
 .hero__text h1{font-size:48px;margin-bottom:10px}
 .hero__text p{font-size:18px;margin-bottom:20px}
-.btn{display:inline-block;padding:12px 22px;background:var(--accent);color:#fff;font-weight:600;border-radius:8px;transition:opacity .2s}
-.btn:hover{opacity:.9}
-.btn--block{display:block;text-align:center}
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: opacity .2s;
+  text-decoration: none; /* для ссылок */
+  border: none;          /* убираем дефолтный border у кнопок */
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+.btn--block {
+  display: block;
+  text-align: center;
+  width: 100%;      /* чтобы обе кнопки занимали одинаковую ширину */
+  padding: 12px 22px; /* одинаковые отступы для кнопок и ссылок */
+}
+.cart__controls {
+  margin-bottom: 15px; /* отступ снизу кнопки Очистить корзину */
+}
+
+.cart__summary a.btn--block {
+  margin-top: 15px; /* отступ сверху кнопки Proceed to Checkout */
+}
+
+
 
 /* ===== Features ===== */
 .features{padding:30px 0;background:var(--soft)}

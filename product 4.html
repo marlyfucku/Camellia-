@@ -36,6 +36,24 @@
       <img src="images/photo_55_2025-09-10_16-48-52.jpg" alt="Thumb 3">
     </div>
   </div>
+
+  <script>
+  const mainImg = document.querySelector(".product__main");
+  const thumbs = document.querySelectorAll(".thumbs img");
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      
+      let mainSrc = mainImg.src;
+      let thumbSrc = thumb.src;
+
+      
+      mainImg.src = thumbSrc;
+      thumb.src = mainSrc;
+    });
+  });
+</script>
+
   <div class="product__info">
     <h1>Summer T‑Shirt</h1>
     <p class="price">$29.99</p>

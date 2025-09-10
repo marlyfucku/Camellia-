@@ -24,6 +24,24 @@
       <a href="login.html" class="link">Регистрация</a>
       <a href="cart.html" class="link">Корзина (0)</a>
     </div>
+
+<script>
+  const mainImg = document.querySelector(".product__main");
+  const thumbs = document.querySelectorAll(".thumbs img");
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      
+      let mainSrc = mainImg.src;
+      let thumbSrc = thumb.src;
+
+      
+      mainImg.src = thumbSrc;
+      thumb.src = mainSrc;
+    });
+  });
+</script>
+
   </div>
 </header>
 
