@@ -7,13 +7,15 @@
 <link rel="stylesheet" href="css/style.css" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <title>Camellia — Login</title>
+<title>Camellia — Login</title>
 </head>
 <body>
 
 <header class="header">
   <div class="container header__inner">
-    <a href="index.html" class="logo"><img src="./images/ChatGPT Image 8. Sept. 2025, 23_18_25.png" alt="#" width="120" height="115"></a>
+    <a href="index.html" class="logo">
+      <img src="./images/ChatGPT Image 8. Sept. 2025, 23_18_25.png" alt="Camellia" width="120" height="115">
+    </a>
     <nav class="nav">
       <a href="index.html" class="nav__link">Home</a>
       <a href="catalog.html" class="nav__link">Shop</a>
@@ -21,7 +23,7 @@
       <a href="contact.html" class="nav__link">Contact</a>
     </nav>
     <div class="header__icons">
-      <a href="login.html" class="link">Регистрация</a>
+      <a href="register.html" class="link">Регистрация</a>
       <a href="cart.html" class="link">Корзина (0)</a>
     </div>
   </div>
@@ -30,14 +32,14 @@
 <main class="container page auth">
   <div class="card">
     <h1>Войти в аккаунт</h1>
-    <form class="form">
+    <form class="form" id="loginForm">
       <div class="field">
-        <label>Email</label>
-        <input type="email" placeholder="you@example.com">
+        <label for="login_or_email">Email или логин</label>
+        <input type="text" id="login_or_email" placeholder="you@example.com" required>
       </div>
       <div class="field">
-        <label>Password</label>
-        <input type="password" placeholder="••••••••">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" placeholder="••••••••" required>
       </div>
       <button class="btn" type="submit">Войти</button>
       <p class="muted center">Нет аккаунта? <a class="link" href="register.html">Регистрация</a></p>
@@ -55,6 +57,7 @@
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<!-- Подключаем JS для логина -->
+<script type="module" src="js/login.js"></script>
 </body>
 </html>

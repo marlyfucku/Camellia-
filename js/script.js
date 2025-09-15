@@ -27,3 +27,10 @@ addButtons.forEach(btn => {
     }, 100);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const user = localStorage.getItem("username");
+  if (user) {
+    document.getElementById("userName").textContent = "👤 " + user;
+  }
+});
