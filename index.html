@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="css/style.css" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <title>Camellia</title>
+<title>Camellia</title>
 </head>
 <body>
 
@@ -22,11 +20,9 @@
     </nav>
 
     <div class="header__icons">
-      <div class="header__user">
-   <span id="userName"></span>
-</div>
-      <a href="login.html" class="link">Регистрация</a>
-      <a href="cart.html" class="link">Корзина (0)</a>
+      <span id="userName" style="margin-right: 10px; font-weight: bold;"></span>
+      <a href="login.html" class="link" id="loginLink">Регистрация</a>
+      <a href="cart.html" class="cart-link">🛒 <span id="cart-count">0</span></a>
     </div>
   </div>
 </header>
@@ -79,6 +75,7 @@
     </div>
   </div>
 </section>
+
 <footer class="footer">
   <div class="container footer__inner">
     <p>© 2025 Camellia Store. All rights reserved.</p>
@@ -90,5 +87,17 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script>
+  // Отображение логина пользователя, если он вошел
+  const userNameSpan = document.getElementById('userName');
+  const loginLink = document.getElementById('loginLink');
+  const loginOrEmail = localStorage.getItem('login_or_email');
+
+  if (loginOrEmail) {
+    userNameSpan.textContent = loginOrEmail;
+    loginLink.style.display = 'none'; // скрываем кнопку регистрации
+  }
+</script>
+<script src="js/cart.js"></script>
 </body>
 </html>
